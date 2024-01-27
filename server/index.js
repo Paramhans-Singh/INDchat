@@ -15,9 +15,21 @@ const app = express();
 // to connect backend and frontend
 const corsConfig = {
   origin: process.env.BASE_URL,
+  allowedHeaders: [
+    'Access-Control-Allow-Origin',
+    'Content-Type',
+    'Authorization',
+    'X-Requested-With',
+    'Accept',
+    'Origin',
+    'x-access-token',
+    'x-refresh-token',
+    'user-token',
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
+
 const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
