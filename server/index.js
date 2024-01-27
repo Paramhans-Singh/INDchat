@@ -1,5 +1,5 @@
 import express from 'express';
-import dotenv from 'dotenv/config';   //dotenv file to fetch the credentials of .enc file
+import dotenv from 'dotenv/config'; //dotenv file to fetch the credentials of .enc file
 import mongoDBConnect from './mongoDB/connection.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
@@ -15,9 +15,10 @@ const app = express();
 // to connect backend and frontend
 const corsConfig = {
   origin: process.env.BASE_URL,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
-const PORT=process.env.PORT || 8000
+const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,13 +29,12 @@ app.use('/', userRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/message', messageRoutes);
 
-// database connect 
+// database connect
 mongoose.set('strictQuery', false);
 mongoDBConnect();
 const server = app.listen(PORT, () => {
   console.log(`Server Listening at PORT - ${PORT}`);
 });
-
 
 // connect socket.io
 const io = new Server.Server(server, {
