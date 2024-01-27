@@ -9,6 +9,7 @@ function App() {
     <div className="bg-[#F8F4EA]">
       <Router>
         <Routes>
+          <Route path="*" elemrnt={<h1>Hi</h1>} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Regsiter />} />
           <Route exact path="/chats" element={<Home />} />
