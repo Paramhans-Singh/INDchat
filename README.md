@@ -1,1 +1,1 @@
-# Chat-X
+# INDchat
