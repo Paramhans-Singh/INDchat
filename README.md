@@ -3,6 +3,7 @@
 Welcome to a real-time chat website that enables users to connect and engage in live conversations. This platform is constructed using the MERN stack, incorporating MongoDB, Express.js, React.js, and Node.js, alongside the powerful technologies of Socket.io, Redux Toolkit, and Tailwind CSS.
 
 <br>
+
 If you find the project interesting, consider giving the repository a star⭐. Check out the YouTube demo [here](link).
 
 <br>
