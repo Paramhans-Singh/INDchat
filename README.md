@@ -1,18 +1,21 @@
-## INDchat
-
-## Real-Time Chat Website with MERN Stack, Socket.io, Redux Toolkit, and Tailwind CSS
+## INDchat 🚀 - Real-Time Chat Website with MERN Stack, Socket.io, Redux Toolkit, and Tailwind CSS
 
 Welcome to a real-time chat website that enables users to connect and engage in live conversations. This platform is constructed using the MERN stack, incorporating MongoDB, Express.js, React.js, and Node.js, alongside the powerful technologies of Socket.io, Redux Toolkit, and Tailwind CSS.
 
+<br>
 If you find the project interesting, consider giving the repository a star⭐. Check out the YouTube demo [here](link).
 
-## Technologies Used
+<br>
+<br>
+
+## 🛠️ Technologies Used
 - **MERN stack:** MongoDB for the database, Express.js and Node.js for server-side development, and React.js for the user interface.
 - **Socket.io:** Providing real-time communication, allowing users to send and receive messages instantly.
 - **Redux Toolkit:** Ensuring efficient state management within the application.
 - **Tailwind CSS:** Styling the website for a visually appealing and modern look.
+<br>
 
-## Features
+## Features 🌐
 - **Real-time chat:** Users can seamlessly send and receive messages in real-time, fostering instant communication.
 - **User authentication:** Securely sign up, log in, and log out using JWT and Google Auth.
 - **Group creation:** Users have the capability to create chat rooms and invite others to join in on the conversation.
